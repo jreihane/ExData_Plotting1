@@ -7,3 +7,6 @@ dataFile$DateTime <- as.POSIXct(d1)
 
 par(bg="white")
 with(dataFile, hist(Global_active_power,breaks=11,col="red",xlab="Global Active Power (kilowatts)"))
+
+dev.copy(png,"figure\\plot1.png",width=480,height=480)
+dev.off()

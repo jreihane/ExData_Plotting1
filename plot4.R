@@ -24,3 +24,6 @@ legend("topright",legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),l
 
 # row = 2 column = 2
 with(dataFile, plot(DateTime,Global_reactive_power,type="l"))
+
+dev.copy(png,"figure\\plot4.png",width=480,height=480)
+dev.off()

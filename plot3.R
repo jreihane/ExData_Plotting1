@@ -14,3 +14,6 @@ with(dataFile, points(DateTime,Sub_metering_3,col="blue",type="l"))
 mini <- min(dataFile$DateTime)
 axis(side=1, at=c(mini, mini+86400, mini+2*86400),labels=c("Thu","Fri","Sat"))
 legend("topright",legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),lty=c(1,1),col=c("black","red","blue"),seg.len=.5)
+
+dev.copy(png,"figure\\plot3.png",width=480,height=480)
+dev.off()
